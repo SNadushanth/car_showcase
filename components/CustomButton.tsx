@@ -4,15 +4,16 @@ import React from "react";
 import Image from "next/image";
 import { CustomButtonProps } from "@/types";
 
-const CustomeButton = ({
+const CustomButton = ({
   title,
   containerStyles,
   handleClick,
+  btnType,
 }: CustomButtonProps) => {
   return (
     <button
       disabled={false}
-      type={"button"}
+      type={btnType || "button"}
       className={`custom-btn ${containerStyles}`}
       onClick={handleClick}
     >
@@ -21,4 +22,4 @@ const CustomeButton = ({
   );
 };
 
-export default CustomeButton;
+export default CustomButton;
