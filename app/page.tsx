@@ -2,7 +2,6 @@ import CustomFilter from "@/components/CustomFilter";
 import Hero from "@/components/Hero";
 import SearchBar from "@/components/SearchBar";
 import { fuels, yearsOfProduction } from "@/constants";
-import Image from "next/image";
 
 export default function Home() {
   return (
